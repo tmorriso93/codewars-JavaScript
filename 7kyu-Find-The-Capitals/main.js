@@ -13,3 +13,16 @@ function capitals (word) {
 } 
 
 console.log(capitals("CodEWaRs"));
+
+
+// Another Way to solve it
+
+var capitals2 = function (word) {
+    var caps = [];
+      for(var i = 0; i < word.length; i++) {
+      if(word[i].toUpperCase() == word[i]) caps.push(i);
+    }
+    return caps;
+  };
+
+  console.log(capitals2("CodEWaRs"));
